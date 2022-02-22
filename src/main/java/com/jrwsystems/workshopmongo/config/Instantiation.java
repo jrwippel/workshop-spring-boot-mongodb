@@ -5,6 +5,7 @@ import com.jrwsystems.workshopmongo.domain.User;
 import com.jrwsystems.workshopmongo.dto.AuthorDto;
 import com.jrwsystems.workshopmongo.repository.PostRepository;
 import com.jrwsystems.workshopmongo.repository.UserRepository;
+import org.slf4j.helpers.MarkerIgnoringBase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
@@ -42,5 +43,8 @@ public class Instantiation implements CommandLineRunner {
         Post post1 = new Post(null, sdf.parse("22/02/2022"), "Partiu Gabiroba", "Vou para Vitor com a familia", new AuthorDto(jackson));
         Post post2 = new Post(null, sdf.parse("23/02/2022"), "Café da manhã", "Começando o dia super bem", new AuthorDto(jackson));
         postRepository.saveAll(Arrays.asList(post1, post2));
+
+        jackson.getPosts().addAll(Arrays.asList(post1, post2));
+        userRepository.save(jackson);
     }
 }
