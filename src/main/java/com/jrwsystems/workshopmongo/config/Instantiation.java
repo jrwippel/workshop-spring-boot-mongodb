@@ -2,6 +2,7 @@ package com.jrwsystems.workshopmongo.config;
 
 import com.jrwsystems.workshopmongo.domain.Post;
 import com.jrwsystems.workshopmongo.domain.User;
+import com.jrwsystems.workshopmongo.dto.AuthorDto;
 import com.jrwsystems.workshopmongo.repository.PostRepository;
 import com.jrwsystems.workshopmongo.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +30,6 @@ public class Instantiation implements CommandLineRunner {
         sdf.setTimeZone(TimeZone.getTimeZone("GMT"));
 
         userRepository.deleteAll();
-
         postRepository.deleteAll();
 
         User jackson = new User(null, "Jackson Ricardo Wippel", "jackson.wippel@abin.com.br");
@@ -37,11 +37,10 @@ public class Instantiation implements CommandLineRunner {
         User jack = new User(null, "Jack Reacher", "jack.reacher@cia.com.us");
         User puttin = new User(null, "Vladmir Puttin", "vladmir.puttin@kgb.com.ru");
         User ryan = new User(null, "Jack Ryan", "jack.ryan@cia.com.us");
-
-        Post post1 = new Post(null, sdf.parse("22/02/2022"), "Partiu Gabiroba", "Vou para Vitor com a familia", jackson);
-        Post post2 = new Post(null, sdf.parse("23/02/2022"), "Café da manhã", "Começando o dia super bem", jackson);
-
         userRepository.saveAll(Arrays.asList(jack, jackson, james, puttin, ryan));
+
+        Post post1 = new Post(null, sdf.parse("22/02/2022"), "Partiu Gabiroba", "Vou para Vitor com a familia", new AuthorDto(jackson));
+        Post post2 = new Post(null, sdf.parse("23/02/2022"), "Café da manhã", "Começando o dia super bem", new AuthorDto(jackson));
         postRepository.saveAll(Arrays.asList(post1, post2));
     }
 }
