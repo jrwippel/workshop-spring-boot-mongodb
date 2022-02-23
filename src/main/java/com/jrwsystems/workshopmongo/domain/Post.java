@@ -1,8 +1,11 @@
 package com.jrwsystems.workshopmongo.domain;
 
 import com.jrwsystems.workshopmongo.dto.AuthorDto;
+import com.jrwsystems.workshopmongo.dto.CommentDto;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Objects;
 
 public class Post {
@@ -12,6 +15,8 @@ public class Post {
     private String title;
     private String body;
     private AuthorDto author;
+    private List<CommentDto> commentDtoList = new ArrayList<>();
+
 
     public Post() {
     }
@@ -62,6 +67,14 @@ public class Post {
 
     public void setAuthor(AuthorDto author) {
         this.author = author;
+    }
+
+    public List<CommentDto> getCommentDtoList() {
+        return commentDtoList;
+    }
+
+    public void setCommentDtoList(List<CommentDto> commentDtoList) {
+        this.commentDtoList = commentDtoList;
     }
 
     @Override

@@ -14,13 +14,7 @@ Zsrc/main/java/com/jrwsystems/workshopmongo/services/exception/ObjectNotFoundExc
 Qsrc/main/java/com/jrwsystems/workshopmongo/resources/exception/StandardError.java,6\6\66a6928ba8e0ddc4979f2d5592f22bebe9da4ffc
 Œ
 \src/main/java/com/jrwsystems/workshopmongo/resources/exception/ResourceExceptionHandler.java,2\6\261aad2d807e19682ca70a9b129b65ece0830328
-y
-Isrc/main/java/com/jrwsystems/workshopmongo/repository/PostRepository.java,2\a\2a3165de5e501b6a233127523ad4add67e926727
-k
-;src/main/java/com/jrwsystems/workshopmongo/domain/Post.java,0\c\0c5dc17d6c27007c2662e84e6d963557972a4862
 m
 =src/main/java/com/jrwsystems/workshopmongo/dto/AuthorDto.java,f\0\f0c7f925a767b964ceef808e152592f45f000bfc
 k
 ;src/main/java/com/jrwsystems/workshopmongo/domain/User.java,7\0\70752ccd575d7d53cc049289257dd79157940756
-t
-Dsrc/main/java/com/jrwsystems/workshopmongo/config/Instantiation.java,8\5\85e2cd69446d998b6f7f2be4a7030e951dffbf6a
