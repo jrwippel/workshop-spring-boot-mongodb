@@ -18,3 +18,13 @@ m
 =src/main/java/com/jrwsystems/workshopmongo/dto/AuthorDto.java,f\0\f0c7f925a767b964ceef808e152592f45f000bfc
 k
 ;src/main/java/com/jrwsystems/workshopmongo/domain/User.java,7\0\70752ccd575d7d53cc049289257dd79157940756
+y
+Isrc/main/java/com/jrwsystems/workshopmongo/repository/UserRepository.java,e\0\e0d2dc3343455f3ba6fedf76d6b76ffe14d504c8
+t
+Dsrc/main/java/com/jrwsystems/workshopmongo/services/UserService.java,4\a\4ad1bb0fab1ef2dd668c3987d8a58239139972f2
+k
+;src/main/java/com/jrwsystems/workshopmongo/domain/Post.java,0\c\0c5dc17d6c27007c2662e84e6d963557972a4862
+n
+>src/main/java/com/jrwsystems/workshopmongo/dto/CommentDto.java,d\e\de14becdf26aac1a42120a6c51fd137fe905978a
+t
+Dsrc/main/java/com/jrwsystems/workshopmongo/config/Instantiation.java,8\5\85e2cd69446d998b6f7f2be4a7030e951dffbf6a
